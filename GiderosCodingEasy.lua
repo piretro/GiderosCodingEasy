@@ -586,7 +586,7 @@ function Sprite:ignoreMouseHandler(event)
 	return self
 end
 
-function Sprite:ignoreTouches(event)
+function Sprite:ignoreTouches()
 	-- Tell a sprite to ignore (and block) all mouse and touch events
 	self:addEventListener(Event.MOUSE_DOWN, self.ignoreMouseHandler, self)
 	self:addEventListener(Event.TOUCHES_BEGIN, self.ignoreTouchHandler, self)
